@@ -17,6 +17,22 @@ body {
 }
 
 /* ===================== Common ===================== */
+.section-heading {
+    color: #10375c;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.section-desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
 .btn {
     --height: 60px;
 
@@ -34,6 +50,7 @@ body {
 
 .btn:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 a {
@@ -51,6 +68,10 @@ a {
     min-height: 100vh;
     padding-top: 30px;
     background: var(--header-bg);
+}
+
+.header ~ * {
+    margin-top: 170px;
 }
 
 .header-top {
@@ -106,11 +127,12 @@ a {
 
 .navbar__list {
     display: flex;
-    gap: 42px;
 }
 
-.cta__login,
+.header-cta__login,
 .navbar__link {
+    display: inline-block;
+    padding: 4px 21px;
     color: #c9d2da;
     font-weight: 300;
     font-size: 1.6rem;
@@ -140,9 +162,153 @@ a {
     background: #fff;
 }
 
-.cta__signup {
+.header-cta__signup {
     --height: 44px;
     min-width: 104px;
-    margin-left: 28px;
+    margin-left: 7px;
+    font-size: 1.6rem;
     line-height: 1.67;
+}
+
+/* ===================== Hero ===================== */
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+
+.hero__content {
+    flex-shrink: 0;
+    width: 44%;
+}
+
+.hero__heading {
+    color: #fff;
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.143;
+    letter-spacing: -0.02em;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    color: #c9d2da;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.hero__rows {
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__images {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    z-index: 1;
+}
+
+.hero__img:last-child {
+    margin-left: -6px;
+    width: 210px;
+    height: 410px;
+}
+
+/* ===================== Services ===================== */
+.services__heading,
+.services__desc {
+    text-align: center;
+}
+
+.services__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.services__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.services__list {
+    width: 470px;
+    margin-bottom: 55px;
+}
+
+.services__item {
+    display: flex;
+    justify-content: flex-end;
+    padding: 22px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.services__item:hover {
+    box-shadow: 0px 14px 28px 0px #0000000D;
+}
+
+.services__item:hover .services__icon {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.services__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 19px;
+    border-radius: 50%;
+    color: #10375c;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px 0px #0000000D;
+    transition: 0.25s;
+}
+
+.services-item__heading {
+    color: #10375c;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.services-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
 }
