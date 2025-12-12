@@ -365,3 +365,120 @@ main > * {
     font-size: 1.6rem;
     line-height: 1.75;
 }
+
+/* ===================== Feature ===================== */
+.feature__row {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.feature__media {
+    width: 49%;
+}
+
+.feature__images {
+    position: relative;
+    padding-bottom: 121px;
+    padding-right: 58px;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:first-child {
+    box-shadow: 0px 14px 28px 0px #00000012;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 332px;
+    height: 370px;
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
+
+/* ===================== Member ===================== */
+.member__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    margin-top: 70px;
+}
+
+.member-item {
+    text-align: center;
+}
+
+.member-item__img-block {
+    padding-top: 28px;
+    border-radius: 6px;
+    background: #eaf6ff;
+}
+
+.member-item__img {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+}
+
+.member-item__name {
+    display: inline-block;
+    margin-top: 12px;
+    color: #10375c;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.member-item__desc {
+    color: #575f66;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.857;
+}
+
+.member__control {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 38px;
+}
+
+.member__control-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #575F66;
+    border-radius: 50%;
+    color: #575F66;
+}
+
+.member__control-icon:hover {
+    color: #fff;
+    border-color: var(--primary-color);
+    background: var(--primary-color);
+}
+
+.member__control-icon--right {
+    rotate: 180deg;
+}
