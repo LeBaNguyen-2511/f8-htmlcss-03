@@ -488,3 +488,43 @@ main > * {
 .member__control-icon--right {
     rotate: 180deg;
 }
+
+/* ===================== Install app ===================== */
+.install {
+    margin-top: 265px;
+    background: var(--primary-color);
+}
+
+.install__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.install__img {
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__row {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
+}
