@@ -17,6 +17,14 @@ body {
 }
 
 /* ===================== Common ===================== */
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .control {
     display: flex;
     gap: 18px;
@@ -143,6 +151,7 @@ main > * {
 .logo__brand {
     display: block;
     color: #fff;
+    font-family: "Sora", sans-serif;
     font-size: 1.8em;
 }
 
@@ -651,4 +660,118 @@ main > * {
     max-width: 617px;
     margin: 18px auto 38px;
     font-size: 1.6rem;
+}
+
+/* ===================== Footer ===================== */
+.footer {
+    padding-top: 100px;
+    margin-top: 170px;
+    background: #10375c;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    color: #a9b3bb;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.footer__title {
+    margin: 28px 0 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.footer__title:first-child {
+    margin-top: 0;
+}
+
+.footer__link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #a9b3bb;
+    font-size: 1.4rem;
+    line-height: 1.857;
+    white-space: nowrap;
+}
+
+.footer__social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__social-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: #fff;
+}
+
+.footer__social-img:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.footer__desc--subcribe {
+    font-size: 1.4rem;
+    font-weight: 1.857;
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-form__input {
+    width: 212px;
+    height: 46px;
+    padding: 0 10px;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    outline: none;
+    color: #fff;
+    background: transparent;
+}
+
+.footer-form__input::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    line-height: 1.857;
+}
+
+.footer-form__submit {
+    --height: 46px;
+
+    min-width: 108px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.857;
+}
+
+.footer__copyright {
+    padding: 28px 0 42px;
+    margin-top: 28px;
+    border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+    color: #aab3ba;
+    font-size: 1.4rem;
+    line-height: 1.857;
+    text-align: center;
 }
