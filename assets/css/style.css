@@ -569,7 +569,7 @@ main > * {
     border-radius: 12px;
     background: #ffffff;
     overflow: hidden;
-    transition: .25s;
+    transition: 0.25s;
 }
 
 .news-item:hover {
@@ -592,7 +592,7 @@ main > * {
     border: 2px solid #e8ebee;
     border-top-color: transparent;
     border-radius: 0 0 12px 12px;
-    transition: .25s;
+    transition: 0.25s;
 }
 
 .news-item__heading {
@@ -620,4 +620,35 @@ main > * {
 
 .news-item__more:hover {
     color: var(--primary-color);
+}
+
+/* ===================== Appointment ===================== */
+.appointment__body {
+    padding: 100px 0;
+    background: #f6fbff;
+    text-align: center;
+}
+
+.appointment__heading {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.appointment__heading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    margin: 0 auto;
+    background: var(--primary-color);
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin: 18px auto 38px;
+    font-size: 1.6rem;
 }
